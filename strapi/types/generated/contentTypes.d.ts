@@ -386,6 +386,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
+    analytics: Schema.Attribute.JSON;
     categories: Schema.Attribute.Relation<
       'manyToMany',
       'api::category.category'
